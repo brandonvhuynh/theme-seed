@@ -1,0 +1,117 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+select,
+textarea {
+	color: $input-color__text;
+	border: 1px solid $input-color__border;
+	border-radius: 3px;
+	padding: 15px;
+
+	&:focus {
+		color: $input-color__border-focus;
+	}
+}
+
+select {
+	border: 1px solid $input-color__border;
+}
+
+textarea {
+	width: 100%;
+}
+
+.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+  font-weight: 600; 
+}
+
+.gfield_html h4 {
+  margin: 0;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  padding-top: 14px;
+}
+
+input:focus {
+  outline-color: #ff0679; 
+}
+
+.gform_heading h3{
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: 2px !important;
+}
+
+form .gform_body div input {
+  display: inline-block;
+  min-width: 100%;
+  vertical-align: middle;
+  border-radius: 0px;
+  border: 0px;
+  padding: 24px !important;
+  margin: 0 0 10px 0;
+  font-size: 10px !important;
+  text-transform: uppercase;
+  letter-spacing: 2px !important;
+  max-height: 48px;
+    &.button.gform_next_button {
+      border-radius: 26px !important;
+      padding-top: 15px !important;
+      padding-bottom: 15px !important;
+    }
+}
+
+#gform_wrapper_2 input#input_2_1 {
+  margin-top: 0 !important; 
+}
+
+div.gform_wrapper {
+  margin: 0;
+}
+
+body .gform_wrapper ul li.gfield {
+  margin-top: 0 !important;
+  max-height: 60px; 
+}
+
+.gform_wrapper ul.gform_fields li.gfield {
+  padding-right: 0 !important;
+}
+
+.gform_wrapper .gform_footer.top_label {
+  margin-top: 20px;
+  padding: 0;
+}
+
+.gform_next_button {
+  border-radius: 26px !important;
+}
+
+.gform_page_footer {
+  border: none !important;
+}
+
+// Validation 
+.gform_wrapper div.validation_error {
+  color: white;
+  font-weight: 600;
+  border-color: $fg_mint;
+}

@@ -1,0 +1,158 @@
+footer#colophon {
+  background: #131920;
+  padding: 50px 0 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: calc(50% - 320px) calc(100%);
+  position: relative;
+    @media screen and (max-width: 1200px) {
+      background-position: calc(50% - 50px) calc(100%);
+    }
+    @media screen and (max-width: 980px) {
+      background-position: center center; 
+    }
+    .footer-wrapper {
+      text-align: center;
+        .footer-flex {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end; 
+          max-width: 90%;
+          margin: 0 auto;
+          padding-top: 50px; 
+            @media screen and (max-width: 1200px) {
+              max-width: 100%; 
+            }
+            @media screen and (max-width: 980px) {
+              flex-direction: column; 
+              align-items: center; 
+            }
+            > * {
+              flex-basis: calc(100% / 2 - 20px);
+                @media screen and (max-width: 980px) {
+                  flex-basis: 100%; 
+                  min-width: 90%; 
+                }
+                @media screen and (max-width: 500px) {
+                  min-width: 100%; 
+                }
+            }
+            @media screen and (max-width: 980px) {
+                .right-side {
+                  padding-top: 30px; 
+                }
+            }
+            .left-side ul {
+              margin: 0;
+              padding: 0;
+              list-style: none;
+              text-align: left;
+                @media screen and (max-width: 980px) {
+                  padding-bottom: 30px; 
+                }
+                li {
+                  transition: all .2s ease-in;
+                    &:hover {
+                        a {
+                          color: $fg_mint;
+                            &:after {
+                              width: 100%; 
+                            }
+                        }
+                    }
+                }
+                a {
+                  transition: all .2s ease-in;
+                  color: white;
+                  text-transform: uppercase;
+                  text-decoration: none;
+                  font-size: 10px;
+                  letter-spacing: 2px;
+                  line-height: 32px;
+                  padding: 10px 15px;
+                  border-bottom: 3px dotted $fg_mint;
+                  display: block;
+                  font-weight: 500; 
+                  position: relative; 
+                  max-width: calc(100% - 40px);
+                  float: right;
+                  width: 100%;
+                  padding-left: 0;
+                    img {
+                      position: absolute;
+                      max-width: 40px;
+                      top: 50%;
+                      left: -40px;
+                      transform: translateY(-50%);
+                    }
+                    &:after {
+                      content: '';
+                      position: absolute;
+                      height: 3px; 
+                      bottom: -3px;
+                      left: 0; 
+                      background: $fg_pink; 
+                      width: 0; 
+                      transition: all .2s ease-in; 
+                    }
+                }
+            }
+        // Social media icon CSS is at _social.scss
+            .form-wrapper {
+              padding: 20px 60px 0px 60px;
+              border-bottom: 3px dotted $fg_mint;
+                @media screen and (max-width: 500px) {
+                  padding: 20px 0px 0px 0px; 
+                }
+                form {
+                  background: #353f48;
+                  padding: 40px 50px;
+                  border-radius: 56px 56px 0 0;
+                    @media screen and (max-width: 500px) {
+                      padding: 40px 20px 0px;
+                    }
+                    .mic {
+                      width: 99px;
+                      height: 11px;
+                      background: $fg_blue;
+                      position: relative;
+                      margin: 0 auto;
+                      margin-bottom: 11px;
+                    }
+                    p {
+                      text-transform: uppercase; 
+                      color: white; 
+                      letter-spacing: 2px; 
+                      margin: 0 0 10px; 
+                      letter-spacing: 2px;
+                      font-size: 20px;
+                      font-weight: 700; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.footer-site-info {
+  background: $fg_mint !important;
+  min-height: 142px;
+  border-bottom: 30px solid $fg_blue;
+    p {
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+      letter-spacing: 1px;
+      font-size: 12px;
+      font-weight: 600; 
+    }
+    img {
+      max-width: 173px; 
+      display: block; 
+      margin: 0 auto; 
+      padding-top: 40px;
+    }
+}
+
+

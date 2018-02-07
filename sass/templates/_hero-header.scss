@@ -1,0 +1,24 @@
+div#imageTitle {
+  background-size: cover;
+  height: 415px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative; 
+    .hero-slant-header {
+      padding: 14px 14px;
+      letter-spacing: 0px;
+      border-bottom: 3px $fg_pink solid;
+      font-weight: 600;
+      display: inline-block;
+      font-size: 76px;
+      background: rgba(53, 63, 72, 0.8);
+      color: $fg_white; 
+      position: absolute; 
+      top: 50%; 
+      transform: translateY(-50%) skew(-35deg);
+        span {
+          transform: skew(35deg);
+          display: inline-block;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.fg-mint-background {
+  background-color: $fg_mint;
+    .slant-header {
+      background-color: $fg_white; 
+    }
+    .ios-download {
+      text-align: center;
+        img {
+          width: 30%;
+            @media screen and (max-width: 768px) {
+              width: 60%; 
+              padding-top: 30px; 
+            }
+        }
+    }
+}
+
+.fg-pink-background {
+  background-color: $fg_pink;
+    h2.slant-header {
+      border-color: $fg_mint; 
+      background-color: $fg_white;
+    }
+}

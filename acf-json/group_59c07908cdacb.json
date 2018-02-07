@@ -1,0 +1,643 @@
+{
+    "key": "group_59c07908cdacb",
+    "title": "Field Settings",
+    "fields": [
+        {
+            "key": "field_59c07b40d60ff",
+            "label": "Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59c07c40d6107",
+            "label": "Container?",
+            "name": "container",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_59c07fe3c48de",
+            "label": "Number of Columns",
+            "name": "number_of_columns",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_59c09192c7a11",
+            "label": "Description Max Width",
+            "name": "description_max_width",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59c084d53255f",
+            "label": "Background Overlay Color",
+            "name": "background_overlay_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5a29a6d339c3d",
+            "label": "Default Background Options",
+            "name": "default_background_options",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "custom-background": "Custom",
+                "fg-blue-background": "FG-Blue",
+                "fg-white-background": "FG-White",
+                "fg-mint-background": "FG-Mint",
+                "fg-pink-background": "FG-Pink"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59c07b49d6100",
+            "label": "Background Color",
+            "name": "background_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a29a6d339c3d",
+                        "operator": "==",
+                        "value": "custom-background"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_59c07b5fd6101",
+            "label": "Background Image",
+            "name": "background_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_59c07b69d6102",
+            "label": "Background Position",
+            "name": "background_position",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "left top": "left top",
+                "left center": "left center",
+                "left bottom": "left bottom",
+                "right top": "right top",
+                "right center": "right center",
+                "right bottom": "right bottom",
+                "center top": "center top",
+                "center center": "center center",
+                "center bottom": "center bottom"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59c07b8dd6103",
+            "label": "Background Size",
+            "name": "background_size",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "cover": "cover",
+                "contain": "contain",
+                "initial": "initial"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59c08403811c6",
+            "label": "Extra Row Class",
+            "name": "extra_row_class",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59c0843214724",
+            "label": "Extra Section Class",
+            "name": "extra_section_class",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a299e235aed1",
+            "label": "Slant Header",
+            "name": "slant_header",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "non-slant-header": "No",
+                "slant-header": "Yes"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5a2f17aae483d",
+            "label": "Triangle",
+            "name": "triangle",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5a2f1ab2aa9fc",
+            "label": "Triangle Position",
+            "name": "triangle_position",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a2f17aae483d",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "triangle-both": "Both",
+                "triangle-fill": "Fill"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5a2f17c3e483e",
+            "label": "Triangle Color",
+            "name": "triangle_color",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a2f17aae483d",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5a2f1ab2aa9fc",
+                        "operator": "==",
+                        "value": "triangle-both"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5a2f17aae483d",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5a2f1ab2aa9fc",
+                        "operator": "==",
+                        "value": "triangle-both"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5a2f17aae483d",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5a2f1ab2aa9fc",
+                        "operator": "==",
+                        "value": "triangle-both"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "fg-mint": "FG Mint",
+                "fg-blue": "FG Blue",
+                "fg-white": "FG White",
+                "fg-pink": "FG Pink"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5a32d1fd78577",
+            "label": "Triangle Top Background Color",
+            "name": "triangle_top_background_color",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a2f17aae483d",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5a2f1ab2aa9fc",
+                        "operator": "==",
+                        "value": "triangle-both"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "fg-triangle-top-transparent": "Transparent",
+                "fg-triangle-top-mint": "FG Mint",
+                "fg-triangle-top-blue": "FG Blue",
+                "fg-triangle-top-white": "FG White",
+                "fg-triangle-top-pink": "FG Pink"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5a32d8d9cc8a9",
+            "label": "Triangle Bottom Background Color",
+            "name": "triangle_bottom_background_color",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a2f17aae483d",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5a2f1ab2aa9fc",
+                        "operator": "==",
+                        "value": "triangle-both"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "fg-triangle-bottom-transparent": "Transparent",
+                "fg-triangle-bottom-mint": "FG Mint",
+                "fg-triangle-bottom-blue": "FG Blue",
+                "fg-triangle-bottom-white": "FG White",
+                "fg-triangle-bottom-pink": "FG Pink"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5a2f3cb88d771",
+            "label": "Triangle Fill",
+            "name": "triangle_fill",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a2f17aae483d",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5a2f1ab2aa9fc",
+                        "operator": "==",
+                        "value": "triangle-fill"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "fg-fill-mint": "FG Fill Mint",
+                "fg-fill-blue": "FG Fill Blue",
+                "fg-fill-white": "FG Fill White",
+                "fg-fill-pink": "FG Fill Pink"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5a32d91acc8ac",
+            "label": "Triangle Fill Background Color",
+            "name": "triangle_fill_background_color",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a2f17aae483d",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5a2f1ab2aa9fc",
+                        "operator": "==",
+                        "value": "triangle-fill"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "fg-triangle-fill-transparent": "Transparent",
+                "fg-triangle-fill-mint": "FG Mint",
+                "fg-triangle-fill-blue": "FG Blue",
+                "fg-triangle-fill-white": "FG White",
+                "fg-triangle-fill-pink": "FG Pink"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5a2ed58d7add1",
+            "label": "Video",
+            "name": "video",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5a2ed5b67add2",
+            "label": "Video URL",
+            "name": "video_url",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a2ed58d7add1",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "custom_fields"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1513282496
+}

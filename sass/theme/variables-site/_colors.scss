@@ -1,0 +1,56 @@
+// use color name provided in style guide
+$color__black: #13191f;
+$color__dark-grey: #414042;
+$color__grey: #6d6e71;
+$color__light-grey: #6d6e71;
+$color__background-body: #fff;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-button: #e6e6e6;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+
+
+$fg_mint: #01edcb; 
+$fg_blue: #131921; 
+$fg_white: #fff; 
+$fg_pink: #ff0579;
+$fg_grey: #353f48;
+
+// SVG Colors 
+
+svg.fg-mint, .fg-fill-mint {
+  fill: $fg_mint;
+}
+svg.fg-blue, .fg-fill-blue {
+  fill: $fg_blue;
+}
+
+svg.fg-white, .fg-fill-white {
+  fill: $fg_white;
+}
+
+svg.fg-grey, .fg-fill-grey {
+  fill: $fg_grey;
+}
+
+svg.fg-pink, .fg-fill-pink {
+  fill: $fg_pink;
+}
+// SVG Backgrounds
+
+.fg-triangle-top-transparent, .fg-triangle-bottom-transparent, .fg-triangle-fill-transparent {
+  background-color: transparent;
+} 
+.fg-triangle-top-mint, .fg-triangle-bottom-mint, .fg-triangle-fill-mint {
+  background-color: $fg_mint;
+} 
+.fg-triangle-top-blue, .fg-triangle-bottom-blue, .fg-triangle-fill-blue {
+  background-color: $fg_blue;
+} 
+.fg-triangle-top-white, .fg-triangle-bottom-white, .fg-triangle-fill-white {
+  background-color: $fg_white;
+} 
+.fg-triangle-top-pink, .fg-triangle-bottom-pink, .fg-triangle-fill-pink {
+  background-color: $fg_pink;
+} 

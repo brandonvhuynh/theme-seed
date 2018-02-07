@@ -1,0 +1,52 @@
+{
+    "key": "group_5a32de7f087e2",
+    "title": "Footer Triangle Background",
+    "fields": [
+        {
+            "key": "field_5a32dea06f0c7",
+            "label": "Footer Triangle Background",
+            "name": "footer_triangle_background",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "fg-triangle-bottom-transparent": "Transparent",
+                "fg-triangle-bottom-mint": "FG Mint",
+                "fg-triangle-bottom-blue": "FG Blue",
+                "fg-triangle-bottom-white": "FG White",
+                "fg-triangle-bottom-pink": "FG Pink"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-flexible.php"
+            }
+        ]
+    ],
+    "menu_order": 10,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1513283302
+}

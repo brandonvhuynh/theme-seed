@@ -1,0 +1,74 @@
+a.button, button, input[type="button"], input[type="reset"], input[type="submit"] {
+  border: $button__border;
+  border-radius: $button__border-radius;
+  padding: $button__padding;
+  background: $button__background-color;
+  color: $button__text-color;
+  font-size: 14px !important;
+  font-family: $button__font-family;
+  font-weight: $button__font-weight;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100% !important;  
+  text-align: center; 
+  transition: all .2s ease-in-out; 
+    &:hover {
+      border-color: $button__border__color-hover;
+      color: $button__text-color-hover;
+      background: $button__background-color-hover;
+    }
+
+    &:active, &:focus {
+      border-color: $button__border__color-focus;
+      outline: none;
+    }
+    &:visited {
+      color:initial;
+    }
+}
+
+.cta-button-row {
+  display: flex;
+  margin: 4px 0 35px 120px;
+    @media screen and (max-width: 1500px) {
+      margin: 4px 0px 35px 50px; 
+    }
+    @media screen and (max-width: 1200px) {
+      margin: 4px 0px 35px 0px; 
+    }
+    p {
+        a {
+          display: inline-block;
+          text-transform: uppercase; 
+          text-decoration: none;
+          padding: 9px 22px;
+          border-radius: 26px;
+          letter-spacing: 2px;
+          font-weight: bold;
+          font-size: 10px;
+          transition: all .2s ease-in-out;
+        }
+        &:first-child {
+          margin-right: 8px;
+            &:hover a {
+              color: white !important;
+              background: #ff0679 !important;
+            }
+            a {
+              background: $fg_mint;
+              color: #353f48;
+            }
+        }
+        &:last-child {
+            a {
+              background: #353f46;
+              color: white;
+            }
+            &:hover a {
+              background: $fg_mint;
+              color: #353F51;
+            }
+        }
+    }
+}
+
